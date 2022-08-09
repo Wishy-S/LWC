@@ -1,5 +1,5 @@
 {
-  "serverMaxRevisionCounter": 474,
+  "serverMaxRevisionCounter": 507,
   "sourceMembers": {
     "ListView__Account.AllAccounts": {
       "serverRevisionCounter": 111,
@@ -1019,6 +1019,12 @@
       "serverRevisionCounter": 474,
       "lastRetrievedFromServer": 474,
       "memberType": "QuickAction",
+      "isNameObsolete": false
+    },
+    "Layout__Lead-Lead Layout": {
+      "serverRevisionCounter": 507,
+      "lastRetrievedFromServer": 507,
+      "memberType": "Layout",
       "isNameObsolete": false
     }
   }
