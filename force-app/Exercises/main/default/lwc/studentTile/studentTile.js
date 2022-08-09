@@ -17,4 +17,7 @@ export default class StudentTile extends LightningElement {
         });
         this.dispatchEvent(evt) ;
     }
+    handleStudentSelected(event){
+        this.selectedStudentId=event.detail.studentId;
+    }
 }
