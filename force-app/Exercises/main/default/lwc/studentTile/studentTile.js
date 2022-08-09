@@ -1,5 +1,6 @@
-import { LightningElement, api } from 'lwc';
-
+import { LightningElement, api,wire } from 'lwc';
+import { publish, MessageContext } from 'lightning/messageService';
+import SELECTED_STUDENT_CHANNEL from '@salesforce/messageChannel/SelectedStudentChannel__c';
 export default class StudentTile extends LightningElement {
     @api student = {
         Name: 'Shubham Vyas',
@@ -13,8 +14,9 @@ export default class StudentTile extends LightningElement {
     }
     studentClick(){
         const evt = new CustomEvent('studentselected', {
-        detail: { studentId: this.student.Id }
-        });
+            bubbles: true, composed: true,
+            detail: { studentId: this.student.Id }
+            });
         this.dispatchEvent(evt) ;
     }
     handleStudentSelected(event){
