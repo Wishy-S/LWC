@@ -1,4 +1,4 @@
-import { LightningElement, wire } from 'lwc';
+import { LightningElement, wire ,api} from 'lwc';
 
 import { getRecord, getFieldValue, getFieldDisplayValue } from 'lightning/uiRecordApi';
 import FIELD_Name from '@salesforce/schema/Contact.Name';
@@ -14,7 +14,7 @@ export default class StudentDetail extends LightningElement {
 
 	// TODO #3: locate a valid Contact ID in your scratch org and store it in the studentId property.
 	// Example: studentId = '003S000001SBAXEIA5';
-	studentId = '0032100000yn6XvAAI';
+	@api studentId = '0032100000yn6XvAAI';
 
 	//TODO #4: use wire service to call getRecord, passing in our studentId and array of fields.
 	//		   Store the result in a property named wiredStudent.
