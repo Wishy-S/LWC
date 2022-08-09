@@ -1,5 +1,5 @@
 {
-  "serverMaxRevisionCounter": 464,
+  "serverMaxRevisionCounter": 474,
   "sourceMembers": {
     "ListView__Account.AllAccounts": {
       "serverRevisionCounter": 111,
@@ -959,6 +959,66 @@
       "serverRevisionCounter": 454,
       "lastRetrievedFromServer": 454,
       "memberType": "FlexiPage",
+      "isNameObsolete": false
+    },
+    "AuraDefinitionBundle__DeliveryListAction": {
+      "serverRevisionCounter": 465,
+      "lastRetrievedFromServer": 465,
+      "memberType": "AuraDefinitionBundle",
+      "isNameObsolete": false
+    },
+    "AuraDefinition__DeliveryListAction/DeliveryListAction.cmp": {
+      "serverRevisionCounter": 470,
+      "lastRetrievedFromServer": 470,
+      "memberType": "AuraDefinition",
+      "isNameObsolete": false
+    },
+    "AuraDefinition__DeliveryListAction/DeliveryListActionController.js": {
+      "serverRevisionCounter": 471,
+      "lastRetrievedFromServer": 471,
+      "memberType": "AuraDefinition",
+      "isNameObsolete": false
+    },
+    "AuraDefinition__DeliveryListAction/DeliveryListActionHelper.js": {
+      "serverRevisionCounter": 466,
+      "lastRetrievedFromServer": 466,
+      "memberType": "AuraDefinition",
+      "isNameObsolete": false
+    },
+    "AuraDefinition__DeliveryListAction/DeliveryListAction.css": {
+      "serverRevisionCounter": 467,
+      "lastRetrievedFromServer": 467,
+      "memberType": "AuraDefinition",
+      "isNameObsolete": false
+    },
+    "AuraDefinition__DeliveryListAction/DeliveryListAction.auradoc": {
+      "serverRevisionCounter": 468,
+      "lastRetrievedFromServer": 468,
+      "memberType": "AuraDefinition",
+      "isNameObsolete": false
+    },
+    "AuraDefinition__DeliveryListAction/DeliveryListActionRenderer.js": {
+      "serverRevisionCounter": 469,
+      "lastRetrievedFromServer": 469,
+      "memberType": "AuraDefinition",
+      "isNameObsolete": false
+    },
+    "AuraDefinition__DeliveryListAction/DeliveryListAction.design": {
+      "serverRevisionCounter": 472,
+      "lastRetrievedFromServer": 472,
+      "memberType": "AuraDefinition",
+      "isNameObsolete": false
+    },
+    "AuraDefinition__DeliveryListAction/DeliveryListAction.svg": {
+      "serverRevisionCounter": 473,
+      "lastRetrievedFromServer": 473,
+      "memberType": "AuraDefinition",
+      "isNameObsolete": false
+    },
+    "QuickAction__Delivery_List_Action": {
+      "serverRevisionCounter": 474,
+      "lastRetrievedFromServer": 474,
+      "memberType": "QuickAction",
       "isNameObsolete": false
     }
   }
