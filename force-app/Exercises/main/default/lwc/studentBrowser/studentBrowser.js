@@ -3,7 +3,7 @@ import { LightningElement } from 'lwc';
 export default class StudentBrowser extends LightningElement {
     studentList = [];
     constructor() {
-        super() ;
+        super() ;//set up the correct prototype chain
         const studentNames = ['Rad', 'Stuart', 'Andres', 'Rahul',
         'Amit', 'Simon'];
         this.studentList = studentNames.map( (studentName, index) => {
