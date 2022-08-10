@@ -19,6 +19,7 @@ export default class AwNavigation extends LightningElement {
         }
         onselect(event) {
             const selectedItemName = event.detail.name;
+            // console.log('selected'+ event);
             const evt = new CustomEvent( 'navitemselected' , {
             detail: { itemName: selectedItemName }
             });
