@@ -9,7 +9,9 @@
             <div class="slds-scrollable scrollerSize" >
             <c-responsive-datatable pk-field="Id"
             column-config={cols}
-            row-data={students.data}></c-responsive-datatable>
+            row-data={students.data}
+            onrowdblclick={handleRowDblClick}
+            ></c-responsive-datatable>
             </div>
         </lightning-tab>
     </lightning-tabset>
