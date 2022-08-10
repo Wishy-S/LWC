@@ -1,13 +1,14 @@
 import { LightningElement ,api,wire} from 'lwc';
 import getCertifiedStudents from '@salesforce/apex/CertifiedStudentList.getCertifiedStudents';
-
-
+import deleteStudentCertification from '@salesforce/apex/CertifiedStudentList.deleteStudentCertification';
+import { refreshApex } from '@salesforce/apex';
 export default class CertifiedStudentList extends LightningElement {
     @api certificationId = 0;
     @api certificationName = '';
     certifiedStudents;
     error;
     btnGroupDisabled = true;
+    _wiredStudentResult;
     columnConfig = [
         {
         label: 'Name',
@@ -34,6 +35,7 @@ export default class CertifiedStudentList extends LightningElement {
         '$certificationId'})
         wired_getCertifiedStudents(result) {
             this.certifiedStudents = [];
+            this._wiredStudentResult = result;
             if (result.data) {
             this.certifiedStudents = result.data.map(certHeld => ({
             certificationHeldId: certHeld.Id,
@@ -55,5 +57,41 @@ export default class CertifiedStudentList extends LightningElement {
             const numSelected = event.detail.selectedRows.length;
             this.btnGroupDisabled = (numSelected === 0);
         }
-        
+        getSelectedIDs() {
+            const datatable =
+            this.template.querySelector('lightning-datatable');
+            const ids = datatable.getSelectedRows().map( (r) => (
+            r.certificationHeldId
+            ));
+        return ids;
+        }
+        onCertActions (event) {
+            const btnClicked = event.target.getAttribute('data-btn-id');
+            switch (btnClicked) {
+                case 'btnEmail':
+                break;
+                case 'btnSendCert':
+                break;
+                case 'btnDelete':
+                this.onDelete();
+                break;
+                default:
+                break;
+                }
+        }
+        onDelete() {
+            const certificationIds = this.getSelectedIDs();
+            deleteStudentCertification({certificationIds})
+            .then( () => {
+                refreshApex(this._wiredStudentResult);
+                })
+                .catch(error => {
+                this.error = error;
+                });
+        }
+        refresh(){
+            console.log('clicked');
+            refreshApex(this._wiredStudentResult);
+        }
+
 }
