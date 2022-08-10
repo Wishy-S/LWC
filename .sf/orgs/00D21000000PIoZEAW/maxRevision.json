@@ -1,5 +1,5 @@
 {
-  "serverMaxRevisionCounter": 862,
+  "serverMaxRevisionCounter": 866,
   "sourceMembers": {
     "ListView__Account.AllAccounts": {
       "serverRevisionCounter": 111,
@@ -1274,26 +1274,26 @@
       "isNameObsolete": false
     },
     "LightningComponentBundle__responsiveDatatable": {
-      "serverRevisionCounter": 846,
-      "lastRetrievedFromServer": 846,
+      "serverRevisionCounter": 863,
+      "lastRetrievedFromServer": 863,
       "memberType": "LightningComponentBundle",
       "isNameObsolete": false
     },
     "LightningComponentResource__responsiveDatatable/responsiveDatatable.html": {
-      "serverRevisionCounter": 847,
-      "lastRetrievedFromServer": 847,
+      "serverRevisionCounter": 864,
+      "lastRetrievedFromServer": 864,
       "memberType": "LightningComponentResource",
       "isNameObsolete": false
     },
     "LightningComponentResource__responsiveDatatable/responsiveDatatable.js-meta.xml": {
-      "serverRevisionCounter": 848,
-      "lastRetrievedFromServer": 848,
+      "serverRevisionCounter": 865,
+      "lastRetrievedFromServer": 865,
       "memberType": "LightningComponentResource",
       "isNameObsolete": false
     },
     "LightningComponentResource__responsiveDatatable/responsiveDatatable.js": {
-      "serverRevisionCounter": 849,
-      "lastRetrievedFromServer": 849,
+      "serverRevisionCounter": 866,
+      "lastRetrievedFromServer": 866,
       "memberType": "LightningComponentResource",
       "isNameObsolete": false
     },

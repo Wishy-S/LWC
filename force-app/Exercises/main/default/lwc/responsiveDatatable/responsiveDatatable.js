@@ -45,6 +45,7 @@ export default class ResponsiveDatatable extends LightningElement {
 		this.highlightSelectedRow(target);	
 	}
 	onRowDblClick(event) {
+		
 		const target = event.currentTarget;
 		const evt = new CustomEvent( 'rowdblclick' , {
 		detail: {

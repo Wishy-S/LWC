@@ -1,7 +1,7 @@
 <template>
 	<table class="slds-table slds-table_bordered slds-max-medium-table_stacked">
 		<thead>
-			<tr class="slds-text-heading_label" onclick={onRowClick} ondblclick={onRowDblClick}>
+			<tr class="slds-text-heading_label">
 				<template for:each={columnConfig} for:item="col">
 					<th key={col.fieldName} scope="col" class={col.class}><span class="slds-truncate">{col.label}</span></th>
 				</template>
