@@ -1,5 +1,5 @@
 {
-  "serverMaxRevisionCounter": 743,
+  "serverMaxRevisionCounter": 747,
   "sourceMembers": {
     "ListView__Account.AllAccounts": {
       "serverRevisionCounter": 111,
@@ -1136,14 +1136,26 @@
       "isNameObsolete": false
     },
     "AuraDefinitionBundle__AwApp": {
-      "serverRevisionCounter": 742,
-      "lastRetrievedFromServer": 742,
+      "serverRevisionCounter": 746,
+      "lastRetrievedFromServer": 746,
       "memberType": "AuraDefinitionBundle",
       "isNameObsolete": false
     },
     "AuraDefinition__AwApp/AwApp.app": {
-      "serverRevisionCounter": 743,
-      "lastRetrievedFromServer": 743,
+      "serverRevisionCounter": 747,
+      "lastRetrievedFromServer": 747,
+      "memberType": "AuraDefinition",
+      "isNameObsolete": false
+    },
+    "AuraDefinitionBundle__AwAppTemplate": {
+      "serverRevisionCounter": 744,
+      "lastRetrievedFromServer": 744,
+      "memberType": "AuraDefinitionBundle",
+      "isNameObsolete": false
+    },
+    "AuraDefinition__AwAppTemplate/AwAppTemplate.cmp": {
+      "serverRevisionCounter": 745,
+      "lastRetrievedFromServer": 745,
       "memberType": "AuraDefinition",
       "isNameObsolete": false
     }
