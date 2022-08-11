@@ -184,6 +184,9 @@ export default class TripReportFormAdvanced extends LightningElement {
 	onBlur() {
 		this.saveButtonDisabled = !this.validateFields();
 	}
+	onCancel() {
+		this.returnToBrowseMode();
+	}
 	returnToBrowseMode() {
 		const evt = new CustomEvent('tripreportmodechange', {
 		detail: {
@@ -192,4 +195,5 @@ export default class TripReportFormAdvanced extends LightningElement {
 		});
 		this.dispatchEvent(evt);
 	}
+	
 }
