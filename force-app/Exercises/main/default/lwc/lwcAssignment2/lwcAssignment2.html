@@ -1,0 +1,15 @@
+<template>
+    <lightning-card>
+    Name: <lightning-input id="name" name="name" onchange={handler} value={name}></lightning-input><br>
+    Address: <lightning-input id="address" name="address" onchange={handler} value={address}></lightning-input><br>
+    Salary: <lightning-input id="salary" name="salary" onchange={handler} value={salary}></lightning-input><br>
+    Designation: <lightning-input id="designation" name="designation" onchange={handler} value={designation}></lightning-input><br>
+    <button onclick={doit} class="slds-button slds-button_brand">Display</button>
+    <lightning-card if:true={show}>
+        <p>Name:{name}</p>
+        <p>Salary:{salary}</p>
+        <p>Address:{address}</p>
+        <p>Designation:{designation}</p>
+    </lightning-card>
+</lightning-card>
+</template>

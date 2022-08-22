@@ -1,0 +1,11 @@
+<template>
+    <lightning-card>
+        Name: <lightning-input id="name" name="name" onchange={handler} value={name}></lightning-input><br>
+        Age: <lightning-input id="age" name="age" onchange={handler} value={age}></lightning-input><br>
+        Marks: <lightning-input id="marks" name="marks" onchange={handler} value={marks}></lightning-input><br>
+        <button onclick={validate} class="slds-button slds-button_brand">Validate</button>
+        <lightning-card if:true={show}>
+            <p>Result: {result}</p>
+        </lightning-card>
+    </lightning-card>
+</template>

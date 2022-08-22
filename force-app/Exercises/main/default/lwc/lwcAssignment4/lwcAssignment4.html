@@ -1,0 +1,10 @@
+<template>
+    <lightning-card>
+        <template for:each={daysInWeek} for:item="d">
+           <p key={d}>{d}</p>
+        </template>
+        <template for:each={daysIndex} for:item="d">
+            <p key={d}>{d}</p>
+         </template>
+    </lightning-card>
+</template>

@@ -1,0 +1,8 @@
+<template>
+    <lightning-card>
+        <lightning-input value={principal} label="Enter Principal" onchange={handler} name="principal"></lightning-input>
+        <lightning-input value={rate} label="Enter Rate" onchange={handler} name="rate"></lightning-input>
+        <lightning-input value={time} label="Enter Time" onchange={handler} name="time"></lightning-input>
+        <button class="slds-button slds-button_brand" label="Calculate" onclick={helper}>Calculate</button>
+    </lightning-card>
+</template>
