@@ -11,6 +11,3 @@ This is a practice purpose application.
 
 ## Dev, Build and Test
 In order to build this application you need a ready-to-work dev-hub org so what you need to do just clone this repo and make it available locally on your system then open the whole repo folder in any IDE of your choice (I used VS Code).
-
-
-
